@@ -1,0 +1,19 @@
+.nav {
+  display: flex;
+  background: var(--clr-primary-7);
+  margin: 8px 0;
+}
+a {
+  flex: 1;
+  height: 30px;
+  padding: 6px 6px 0 20px;
+  height: 35px;
+  text-decoration: none;
+  border-radius: 4px;
+  color: var(--clr-primary-3);
+  background: var(--clr-primary-7);
+}
+.active {
+  color: var(--clr-primary-6);
+  background: var(--clr-primary-3);
+}

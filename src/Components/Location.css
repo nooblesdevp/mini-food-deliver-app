@@ -1,0 +1,20 @@
+.dashboard__header {
+  display: flex;
+}
+.dashboard__headerLeft__icon {
+  margin-right: 20px;
+  font-size: 30px;
+  color: var(--clr-primary-4);
+}
+.dashboard__headerRight {
+  flex: 1;
+}
+
+.dashboard__headerRight__icon {
+  font-size: 20px;
+  margin-left: 20px;
+}
+.dashboard__headerLocation {
+  display: flex;
+  align-items: center;
+}
