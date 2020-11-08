@@ -1,15 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { MdStar, MdStarHalf } from "react-icons/md";
 import { BsPlus } from "react-icons/bs";
 import "./CardFood.css";
+import { useStateValue } from "../config/Provider";
 
-function CardFood({ food }) {
+function CardFood({
+  food: { id, name, imgFood, author, ratting, price, category },
+}) {
+  const [{ basket, showBasket }, dispatch] = useStateValue();
+
+  const addBasket = () => {
+    dispatch({
+      type: "ADD_TO_BASKET",
+      food: {
+        id,
+        name,
+        imgFood,
+        author,
+        category,
+        ratting,
+        price,
+      },
+    });
+  };
+
   return (
     <div className="cardFood">
-      <img className="cardFood__img" src={food.imgFood} alt="" />
+      <img className="cardFood__img" src={imgFood} alt="" />
       <div className="cardFood__info">
         <div className="cardFood__ratting">
-          <span> {food.ratting}</span>
+          <span> {ratting}</span>
           <div>
             <MdStar className="cardFood__rattingIcon" />
             <MdStar className="cardFood__rattingIcon" />
@@ -18,11 +38,11 @@ function CardFood({ food }) {
             <MdStarHalf className="cardFood__rattingIcon" />
           </div>
         </div>
-        <h3>{food.name}</h3>
-        <span> By {food.author}</span>
+        <h3>{name}</h3>
+        <span> By {author}</span>
         <div className="cardFood__price">
-          <h3> Rp {food.price}</h3>
-          <button>
+          <h3> Rp {price}</h3>
+          <button onClick={addBasket}>
             add
             <BsPlus className="cardFood__rattingIcon addIcon" />
           </button>

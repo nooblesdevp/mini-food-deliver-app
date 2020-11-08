@@ -1,5 +1,5 @@
 export const initialState = {
-  basker: [],
+  basket: [],
 };
 
 // fucnting total price

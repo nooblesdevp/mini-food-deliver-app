@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import DatePicker from "react-horizontal-datepicker";
 import { NavLink } from "react-router-dom";
+import { useStateValue } from "../config/Provider";
+import Basket from "../Components/Basket";
 import CardFood from "../Components/CardFood";
 import Location from "../Components/Location";
 import Nabvar from "../Components/Nabvar";
@@ -9,9 +11,14 @@ import "./Dashboard.css";
 
 function Dashboard({ getSelectedDay }) {
   const [foodData, setFoodData] = useState(footData);
+
+  const [{ basket, showBasket }, dispatch] = useStateValue();
+
+  console.log("basket", basket);
   const selectedDay = (val) => {
     console.log(val);
   };
+
   return (
     <div className="dasboard container">
       <Location />
@@ -24,6 +31,7 @@ function Dashboard({ getSelectedDay }) {
       />
       <Nabvar />
       <h3> Minggu, 7 November 2020 </h3>
+      {basket.length > 0 ? <Basket /> : null}
       {foodData.map((food) => (
         <CardFood key={food.id} food={food} />
       ))}
