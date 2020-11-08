@@ -2,7 +2,7 @@ export const footData = [
   {
     id: "1",
     name: "Rosted Chicken with Scrambel Egg",
-    imgFood: "https://source.unsplash.com/featured/?fastfood,food",
+    imgFood: "https://source.unsplash.com/400x300/?fastfood,food",
     author: "kulina",
     category: "",
     ratting: "4.5",
@@ -21,7 +21,7 @@ export const footData = [
   {
     id: "3",
     name: "Beef Burger Authentic   ",
-    imgFood: "https://source.unsplash.com/featured/?chicken,burger",
+    imgFood: "https://source.unsplash.com/400x300/?chicken,burger",
     author: "kulina",
     category: "",
     ratting: "4.5",
@@ -30,7 +30,7 @@ export const footData = [
   {
     id: "4",
     name: "Beef Burger Authentic   ",
-    imgFood: "https://source.unsplash.com/featured/?salmon,burger",
+    imgFood: "https://source.unsplash.com/400x300/?salmon,burger",
     author: "kulina",
     category: "",
     ratting: "4.5",
@@ -39,7 +39,7 @@ export const footData = [
   {
     id: "5",
     name: "Beef Burger Authentic   ",
-    imgFood: "https://source.unsplash.com/featured/?beef,burger",
+    imgFood: "https://source.unsplash.com/400x300/?beef,burger",
     author: "kulina",
     category: "",
     ratting: "4.5",
@@ -48,7 +48,7 @@ export const footData = [
   {
     id: "6",
     name: "Beef Burger Authentic   ",
-    imgFood: "https://source.unsplash.com/featured/?pizza,burger",
+    imgFood: "https://source.unsplash.com/400x300/?pizza,burger",
     author: "kulina",
     category: "",
     ratting: "4.5",
