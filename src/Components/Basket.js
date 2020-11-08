@@ -36,8 +36,8 @@ function Basket() {
           <CurrencyFormat
             renderText={(value) => (
               <>
-                <span> {basket?.length} items</span> | {""}{" "}
-                <span>{`${value}`}</span>
+                <span> {basket?.length} items</span> | {""}
+                <span> {value}</span>
               </>
             )}
             decimalScale={2}
