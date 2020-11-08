@@ -9,8 +9,7 @@
 }
 .cardFood__img {
   object-fit: fill;
-  min-width: 200px;
-  min-height: 200px;
+  max-height: 280px;
 }
 .cardFood__ratting {
   display: flex;
