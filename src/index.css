@@ -26,8 +26,8 @@ code {
 }
 
 .container {
-  width: 700px;
-  margin: 30px auto;
-  background: var(--clr-primary-6);
+  width: 425px;
+  margin: 0 auto;
+  background: var(--clr-primary-5);
   padding: 16px;
 }

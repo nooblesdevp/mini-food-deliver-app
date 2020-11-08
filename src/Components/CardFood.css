@@ -1,0 +1,54 @@
+.cardFood {
+  display: flex;
+  flex-direction: column;
+  background: var(--clr-primary-6);
+  margin-bottom: 12px;
+  margin-top: 16px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.cardFood__img {
+  object-fit: fill;
+  min-width: 200px;
+  min-height: 200px;
+}
+.cardFood__ratting {
+  display: flex;
+  align-items: center;
+}
+.cardFood__ratting span {
+  font-size: 14px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.cardFood__rattingIcon {
+  font-size: 15px;
+  color: var(--clr-primary-1);
+}
+.cardFood__info {
+  padding: 16px;
+}
+.cardFood__info h3 {
+  margin: 5px 0;
+}
+
+.cardFood__price {
+  display: flex;
+  justify-content: space-between;
+}
+.cardFood__price button {
+  text-transform: uppercase;
+  font-weight: bold;
+  background: var(--clr-primary-1);
+  border: none;
+  color: var(--clr-primary-6);
+  padding: 3px 40px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+.addIcon {
+  color: var(--clr-primary-6);
+
+  font-size: 15px;
+}

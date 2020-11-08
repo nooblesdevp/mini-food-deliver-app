@@ -2,6 +2,7 @@ import React from "react";
 import DatePicker from "react-horizontal-datepicker";
 import Location from "../Components/Location";
 import "../Page/Dashboard.css";
+import CardFood from "./CardFood";
 import Nabvar from "./Nabvar";
 
 function Dinner() {
@@ -20,7 +21,7 @@ function Dinner() {
         color={"#6e7679"}
       />
       <Nabvar />
-      <h1>dinner yooooo</h1>
+      <CardFood />
     </div>
   );
 }
