@@ -3,11 +3,12 @@ export const initialState = {
 };
 
 // fucnting total price
+
 export const getBasketTotal = (basket) =>
-  basket?.reduce((amount, food) => food.price + amount, 0);
+  basket?.reduce((amount, item) => item.price + amount, 0);
 
 const reducer = (state, action) => {
-  console.log("action", action);
+  console.log("action yoo", action);
   switch (action.type) {
     case "ADD_TO_BASKET":
       return {
@@ -23,7 +24,7 @@ const reducer = (state, action) => {
       //clone first item from basket
       let newBasket = [...state.basket];
       const index = state.basket.findIndex(
-        (basketFood) => basketFood.id === action.id
+        (basketItem) => basketItem.id === action.id
       );
       if (index >= 0) {
         //food existes in basket

@@ -15,7 +15,6 @@ function Dashboard({ getSelectedDay }) {
   const [{ basket, showBasket }, dispatch] = useStateValue();
 
   console.log("basket", basket);
-  const selectedDay = (val) => {
     console.log(val);
   };
 
@@ -32,9 +31,10 @@ function Dashboard({ getSelectedDay }) {
       <Nabvar />
       <h3> Minggu, 7 November 2020 </h3>
       {basket.length > 0 ? <Basket /> : null}
-      {foodData.map((food) => (
-        <CardFood key={food.id} food={food} />
+      {foodData.map((item) => (
+        <CardFood key={item.id} item={item} />
       ))}
+      item
     </div>
   );
 }

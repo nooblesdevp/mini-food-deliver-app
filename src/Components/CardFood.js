@@ -5,14 +5,14 @@ import "./CardFood.css";
 import { useStateValue } from "../config/Provider";
 
 function CardFood({
-  food: { id, name, imgFood, author, ratting, price, category },
+  item: { id, name, imgFood, author, ratting, price, category },
 }) {
-  const [{ basket, showBasket }, dispatch] = useStateValue();
+  const [{ basket }, dispatch] = useStateValue();
 
   const addBasket = () => {
     dispatch({
       type: "ADD_TO_BASKET",
-      food: {
+      item: {
         id,
         name,
         imgFood,
@@ -30,13 +30,11 @@ function CardFood({
       <div className="cardFood__info">
         <div className="cardFood__ratting">
           <span> {ratting}</span>
-          <div>
-            <MdStar className="cardFood__rattingIcon" />
-            <MdStar className="cardFood__rattingIcon" />
-            <MdStar className="cardFood__rattingIcon" />
-            <MdStar className="cardFood__rattingIcon" />
-            <MdStarHalf className="cardFood__rattingIcon" />
-          </div>
+          {Array(ratting)
+            .fill()
+            .map((_) => (
+              <MdStar className="cardFood__rattingIcon" />
+            ))}
         </div>
         <h3>{name}</h3>
         <span> By {author}</span>

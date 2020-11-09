@@ -9,6 +9,9 @@ import { motion } from "framer-motion";
 function Basket() {
   const [{ basket }, dispatch] = useStateValue();
 
+  const totalBasket = (basket) =>
+    basket?.reduce((amount, food) => food.price + amount, 0);
+
   //efect show
   const basketVariant = {
     hidden: {
@@ -36,12 +39,12 @@ function Basket() {
           <CurrencyFormat
             renderText={(value) => (
               <>
-                <span> {basket?.length} items</span> | {""}
-                <span> {value}</span>
+                <span> {basket.length} items</span> | {""}
+                <strong> {value}</strong>
               </>
             )}
             decimalScale={2}
-            value={getBasketTotal(basket)}
+            value={getBasketTotal(basket)} // Part of the homework
             displayType={"text"}
             thousandSeparator={true}
             prefix={"Rp"}
