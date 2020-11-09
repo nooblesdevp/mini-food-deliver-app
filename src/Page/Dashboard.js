@@ -15,6 +15,7 @@ function Dashboard({ getSelectedDay }) {
   const [{ basket, showBasket }, dispatch] = useStateValue();
 
   console.log("basket", basket);
+  const selectedDay = (val) => {
     console.log(val);
   };
 

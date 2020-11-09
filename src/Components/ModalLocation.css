@@ -1,0 +1,51 @@
+.customModalLocation {
+  width: 377px;
+  height: 80vh;
+  margin-top: 20vh;
+  margin-left: -9px;
+}
+.customModalLocation h3 {
+  font-size: 18px;
+}
+.modalLocation__input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.modalLocation__inputIcon {
+  position: absolute;
+  font-size: 19px;
+  left: 15px;
+  top: 14px;
+  color: var(--clr-primary-1);
+}
+.location-search-input {
+  width: 338px;
+  font-size: 17px;
+  padding-left: 44px;
+  border: 1px solid var(--clr-primary-5);
+  border-radius: 4px;
+  height: 45px;
+}
+.modalLocation__input input::placeholder {
+  padding-left: 10px;
+}
+
+.ModalLocation__suggestion {
+  border: none;
+  display: flex;
+  align-items: center;
+  width: 336px;
+  height: 38px;
+}
+.ModalLocation__suggestionIcon {
+  color: var(--clr-primary-1);
+  font-size: 17px;
+  margin-right: 16px;
+}
+.location-search-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
