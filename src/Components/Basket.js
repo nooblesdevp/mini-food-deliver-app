@@ -40,11 +40,13 @@ function Basket() {
             renderText={(value) => (
               <>
                 <span> {basket.length} items</span> | {""}
-                <strong> {value}</strong>
+                <strong>
+                  {""} {value}
+                </strong>
               </>
             )}
-            decimalScale={2}
-            value={getBasketTotal(basket)} // Part of the homework
+            decimalScale={3}
+            value={60000} // Part of the homework
             displayType={"text"}
             thousandSeparator={true}
             prefix={"Rp"}

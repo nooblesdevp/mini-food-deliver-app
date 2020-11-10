@@ -14,7 +14,7 @@ function Location() {
       <div onClick={() => setSmShow(true)} className="dashboard__headerRight">
         <span>jl Mas Mansyur no 78</span>
         <div className="dashboard__headerLocation">
-          <h3>Tokopedia Tower</h3>
+          <h5>Tokopedia Tower</h5>
           <MdExpandMore className="dashboard__headerRight__icon" />
         </div>
       </div>

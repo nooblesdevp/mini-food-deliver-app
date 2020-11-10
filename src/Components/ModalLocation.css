@@ -49,3 +49,7 @@
   flex-direction: column;
   align-items: center;
 }
+
+.modal-header {
+  border-bottom: none;
+}

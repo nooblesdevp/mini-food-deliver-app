@@ -30,7 +30,7 @@ function Dashboard({ getSelectedDay }) {
         color={"#6e7679"}
       />
       <Nabvar />
-      <h3> Minggu, 7 November 2020 </h3>
+      <h5> Minggu, 7 November 2020 </h5>
       {basket.length > 0 ? <Basket /> : null}
       {foodData.map((item) => (
         <CardFood key={item.id} item={item} />
